@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Black Han Sans", sans-serif;
+    letter-spacing: 0.2rem;
+}

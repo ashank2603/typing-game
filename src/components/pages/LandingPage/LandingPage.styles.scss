@@ -1,0 +1,108 @@
+@import '~antd/dist/antd.css';
+
+.landing-page-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.3)),
+        url("../../../assets/images/MainBackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .game-information-container {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        padding: 2rem 4rem;
+        margin: 0rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        -webkit-box-shadow: -2px 0px 4px -6px rgba(255, 255, 255, 1);
+        -moz-box-shadow: -2px 0px 4px -6px rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 10px -4px rgba(255, 255, 255, 1);
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            background: -webkit-linear-gradient(#ffffff, #e6ffe1);
+            text-shadow: 1px 1px 3px rgba(206, 89, 55, 0.1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+        }
+
+        .game-information-container-link {
+            text-decoration: none;
+            border-radius: 2rem;
+            padding: 1.6rem 3.2rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            // background: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 56.25rem) {
+    .landing-page-wrapper {
+        .game-information-container {
+            h1 {
+                font-size: 3.6rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .landing-page-wrapper {
+        .game-information-container {
+            h1 {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 35rem) {
+    .landing-page-wrapper {
+        .game-information-container {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+.play-button {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+.play-button {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   cursor: pointer;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .play-button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
