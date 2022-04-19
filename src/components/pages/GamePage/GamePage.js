@@ -75,8 +75,6 @@ const GamePage = () => {
                     <li><p style={{ fontFamily:"sans-serif" }}>You can restart the game using the restart button.</p></li>
                     <li><p style={{ fontFamily:"sans-serif" }}>Try to score maximum points and share with your friends.</p></li>
                 </ul>
-              {/* <p>some messages...some messages...</p>
-              <p>some messages...some messages...</p> */}
             </div>
           ),
           onOk() {},
@@ -128,7 +126,6 @@ const GamePage = () => {
             setWord(randomWord);
             setNumberOfGeneratedWords(numberOfGeneratedWords + 1);
         })();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // StartTimer
@@ -221,7 +218,7 @@ const GamePage = () => {
             ) : null}
             <div className="exit-container">
                     <Link to="/">
-                        <button className="exit-button">Exit</button> {/*Change the classname in the final version */}
+                        <button className="exit-button">Exit</button> 
                     </Link>
             </div>
             <QuestionCircleOutlined onClick={info} style={{color:"white", fontSize:"35px", position:"absolute", right:"10px", top:"10px"}} />
